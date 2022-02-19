@@ -5,6 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(67, 67, 67);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(174, 174, 174);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(116, 116, 116);
+}
+
+* {
+  /* font-family: montserrat; */
+  font-family: 'Poppins', sans-serif;
 }
 
 code {

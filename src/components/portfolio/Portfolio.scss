@@ -1,0 +1,248 @@
+.Portfolio-app {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+        .Portfolio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            h1 {
+                font-size: 40px;
+                margin: 0;
+            } 
+
+            .span__header {
+                font-size: 14px;
+                color: rgb(136, 136, 136);
+            }
+    
+            .menu-list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                width: 920px;
+                height: 60px;
+                margin-top: 40px;
+
+                border-radius: 12px;
+                box-shadow: 1px 6px 25px 5px rgba(204, 204, 204, 0.213);
+
+                ul {
+                    margin: 10px;
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+        
+                    .Portfolio-listActive{
+                        font-size: 14px;
+                        margin-right: 20px;
+                        padding: 5px 17px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        font-weight: 600;
+        
+                        &.active {
+                            background-color: rgb(255, 191, 28);
+                            color: white;
+                            cursor: default;
+                            transition-duration: .9s;
+                            box-shadow: 1px 3px 10px 0px rgba(204, 204, 204, 0.618);
+                        } //active
+    
+                    }; //Portfolio-list Active
+        
+                    .Portfolio-listInactive {
+                        color: rgb(202, 202, 202);
+                        font-size: 14px;
+                        margin-right: 20px;
+                        padding: 5px 17px;
+                        border-radius: 10px;
+                        cursor: pointer;    
+                        font-weight: 600;
+        
+                        &:hover {
+                            color: rgb(255, 191, 28);
+                        }// hover
+    
+                    };// Portfolio-list Inactive
+                }; //ul
+            }
+    
+            .container {
+                width: 1050px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .item {
+                    box-shadow: 1px 6px 15px 0px rgba(204, 204, 204, 0.337);
+                    width: 280px;
+                    height: 200px;
+                    border-radius: 20px;
+                    margin: 30px 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    position: relative;
+                    cursor: pointer;
+                    transition: all 0.5s ease-in-out;
+    
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        border-radius: 20px;
+                    }// a
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: 1;
+                        border-radius: 20px;
+                    }// img
+                    
+                    h3{
+                        position: absolute;
+                        font-size: 20px;
+                    }
+                    
+                    &:hover {
+                        background-color: rgb(39, 39, 39);
+    
+                        a{
+                            z-index: 0;
+                        }// a
+    
+                        img{
+                            opacity: 0.2;
+                            z-index:  0;
+                        }// img
+
+                    } //hover 
+                };// item
+            }; //container
+        };// Portfolio
+
+        .shape {
+            width: 500px;
+            height: 0;
+            position: relative;
+
+            .shape-1, .shape-2, .shape-3, .shape-4, .shape-5, .shape-6, .shape-7, .shape-8, .shape-9 {
+                z-index: -99;
+                position: absolute;
+                border-radius: 100%;
+                animation: animation-1 2s linear infinite;
+            }
+
+            @keyframes animation-1 {
+                0% {
+                    transform: scale(1);
+                }
+            
+                50% {
+                    transform: scale(1.4);
+                }
+            
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            .shape-1 {
+                width: 40px;
+                height: 40px;
+                left: 750px;
+                top: 130px;
+                background: #273464;
+            } //shape-1
+    
+            .shape-2 {
+                width: 70px;
+                height: 70px;
+                left: -200px;
+                top: 0px;
+                background: #273464;
+            } //shape-6
+    
+            .shape-3 {
+                width: 25px;
+                height: 25px;
+                left:-320px;
+                top: 250px;
+                background: #96a5e4;
+            } //shape-7
+    
+            .shape-4 {
+                width: 12px;
+                height: 12px;
+                left: 850px;
+                top: 450px;
+                background: #96a5e4;
+            } //shape-9
+            
+        } //shape
+
+};//Portfolio-app
+
+
+
+/////////////////////////////////////////////////// responsive //////////////////////////////////////////////////
+
+@media screen and (max-width: 600px) {
+    .Portfolio-app {
+
+        .Portfolio {
+
+            .menu-list {
+                width: 90%;
+                height: 50px;
+
+                border-radius: 12px;
+                box-shadow: 1px 6px 25px 5px rgba(204, 204, 204, 0.213);
+            }
+
+            h1 {
+                font-size: 30px;
+                margin: 0px 0px 0px 0px;
+            }
+        
+            ul {
+                margin: 0px 0px 0px 30px ;
+            }
+        
+            .container {
+                margin-top: 20px;
+                width: 90%;
+        
+                .item {
+                    width: 240px;
+                    height: 160px;
+                    margin: 10px 10px;
+        
+                    h3 {
+                        font-size: 16px;
+                    }
+                }// item
+
+            };// container
+
+        } // portfolil
+
+        .shape { 
+            display: none
+        } //shape
+
+    } // portfolio-app
+};// media
+
+/////////////////////////////////////////////////// responsive //////////////////////////////////////////////////

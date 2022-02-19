@@ -1,0 +1,168 @@
+.img-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.145)), url(../../assets/cover-img4.jpg);
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    z-index: -99;
+    opacity: 100%;
+    background-size: cover;
+    background-position: center;
+
+    .container { 
+        margin: 0 auto; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1050px;
+        height: 100%;
+
+        .text { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+            line-height: 0;
+
+                h2 { 
+                    margin: 0;
+                    font-size: 46px;
+                    color: rgb(255, 191, 28); 
+                    letter-spacing: 0.5px;
+                }
+
+                .head { 
+                    color:white; 
+                    font-size: 70px; 
+                    font-weight: bold;
+                }
+
+                .details { 
+                    color: rgb(255, 255, 255);
+                    font-weight: normal ;
+                    font-size: 24px; 
+                }
+
+        }; //text
+
+        .btn-header {
+            padding: 7px 25px;
+            font-size: 14px;
+            border: 1px solid rgb(255, 145, 0);
+            background-color: rgb(255, 145, 0);
+            cursor: pointer;
+            color: white;
+            outline: none;
+            border-radius: 50px;
+        }
+        
+        .btn-header:hover {
+            background-color: rgb(213, 121, 0);
+            color: white;
+            border: 1px solid rgb(213, 121, 0);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-header:active {
+            background-color: rgb(255, 145, 0);
+            border: 1px solid rgb(255, 145, 0);
+            color: white;
+            transition:  all 0.03s ease;
+        }
+
+        .icon-arrow {
+            text-align: center;
+            height: 100px;
+
+                p {
+                    font-size: 11px;
+                    letter-spacing: 1px;
+                    color: white;
+                    margin-bottom: 5px;
+                    color: rgb(255, 255, 255);
+                }
+
+                i {
+                    font-size: 30px;
+                    color: white;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    animation: animation-3 1s linear infinite;
+
+                    @keyframes animation-3 {
+                        0% {
+                            margin-top: 0px;
+                        }
+                    
+                        30% {
+                            margin-top: 8px;
+                        }
+                    
+                        80% {
+                            margin-top: 0px;
+                        }
+                    } //keyframes
+                } //i
+
+                i:hover {
+                    color: rgb(255, 145, 0);
+                    transition: all 0.3s ease;
+                }
+        }; // icon-arrow
+    };
+};
+
+///////////////////////////////////////////////////////////// Responsive ///////////////////////////////////////////////////////////
+
+@media screen and (max-width: 600px) {
+    .img-header {
+        .container {
+            width: 100%;
+    
+            .text {
+                margin-top: 50px;
+                h2 {
+                    font-size: 16px;
+                }
+    
+                .head {
+                    font-size: 40px;
+                }
+    
+                .details {
+                    font-size: 16px;
+                }
+            }// text
+    
+            .btn-header {
+                padding: 5px 20px;
+                font-size: 14px;
+            }
+    
+            .icon-arrow {
+                height: 250px;
+                
+                i {
+                    font-size: 24px;
+                }
+    
+            }// icon-arrow
+            
+        };// container
+    }; //img-header
+}; //media
+
+@media screen and (min-width: 1900px) {
+    .img-header {
+        .container {
+            .text {
+                .head {
+                    font-size: 140px;
+                }
+            }// text
+        };// container
+    }; //img-header
+}; //media
+
+///////////////////////////////////////////////////////////// Responsive ///////////////////////////////////////////////////////////
