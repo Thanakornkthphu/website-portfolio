@@ -43,7 +43,7 @@ function Navbar() {
                 <div className={openHamburger ? "menu-list open" : "menu-list"}>
                     <div className="navbar-menu">
                         <li>
-                            <Link activeclassName='active' to='Hero' onClick={scrollToTop} spy={true} > 
+                            <Link activeclassname='active' to='Hero' onClick={scrollToTop} spy={true} > 
                                 Home 
                             </Link>
                         </li>
