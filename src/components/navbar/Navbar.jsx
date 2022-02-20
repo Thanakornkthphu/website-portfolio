@@ -48,25 +48,25 @@ function Navbar() {
                             </Link>
                         </li>
                         <li>
-                            <Link activeclassName='active' onClick={() => setOpenHamburger(false)} 
+                            <Link activeclassname='active' onClick={() => setOpenHamburger(false)} 
                             to="About" smooth={true} duration={900} offset={-60} spy={true} > 
                                 About 
                             </Link>
                         </li>
                         <li>
-                            <Link activeclassName='active' onClick={() => setOpenHamburger(false)} 
+                            <Link activeclassname='active' onClick={() => setOpenHamburger(false)} 
                             to="skill" smooth={true} duration={900} offset={-50} spy={true} > 
                                 Skill 
                             </Link>
                         </li>
                         <li>
-                            <Link activeclassName='active' onClick={() => setOpenHamburger(false)} 
+                            <Link activeclassname='active' onClick={() => setOpenHamburger(false)} 
                             to="Portfolio" smooth={true} duration={900} offset={-110} spy={true} >  
                                 Portfolio 
                             </Link>
                         </li>
                         <li>
-                            <Link activeclassName='active' onClick={() => setOpenHamburger(false)} 
+                            <Link activeclassname='active' onClick={() => setOpenHamburger(false)} 
                             to="Contact" smooth={true} duration={900} offset={-40} spy={true} > 
                                 Contact 
                             </Link>

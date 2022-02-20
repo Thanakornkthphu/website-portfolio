@@ -21,7 +21,7 @@ function Skill() {
                 <div className="container" data-aos="zoom-in-up" data-aos-duration="1500">
                     {skills.map(skill => {
                         return (
-                            <div className="item">
+                            <div className="item" key={skill.id}>
                                 <div className="img">
                                     <img src={skill.img} alt="#" />
                                 </div>
