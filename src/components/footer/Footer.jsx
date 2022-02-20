@@ -27,13 +27,15 @@ function Footer() {
                                 </div>
                         </div>
 
-                        <span>
-                            Developed & Design By 
-                            <a className='link' target='_blank' rel="noreferrer" href="https://github.com/Thanakornkthphu">
-                                Thanakorn. 
-                            </a>
-                            Using React JS.
-                        </span>
+                        <div className="footer__span">
+                            <span>Developed & Design By 
+                                <a className="link" target="_blank" rel="noreferrer" href="https://github.com/Thanakornkthphu">
+                                    Thanakorn. 
+                                </a>
+                            </span>
+                            <span>Using React JS. </span>
+                            
+                        </div>
                     </div>
                 </div>        
             </div>   

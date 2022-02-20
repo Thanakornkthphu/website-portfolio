@@ -22,7 +22,7 @@ function About() {
                     <p className="about__detail" >
                         I'm 24 years old I'm currently working as an administrator at Deves Insurance
                         and I'm interested Front-end developer because before I studied UX/UI
-                        and during that time I also studied Front-end therefore, but I feel like Front-end
+                        and during that time I also studied Front-end therefore, but I like Front-end
                         more than and it feel like have developed products by myself.
                     </p>
                 {/* text-details */}    

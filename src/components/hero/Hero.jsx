@@ -14,7 +14,9 @@ function Hero() {
                     </div>
 
                     <Link to="Portfolio" smooth={true} duration={900} offset={-85} >
-                        <button className="btn-header" data-aos="fade-up" data-aos-easing="ease-in-out-cubic" data-aos-duration="1200" data-aos-delay="300"> Portfolio </button>
+                        <button className="btn-header" data-aos="fade-up" data-aos-easing="ease-in-out-cubic" data-aos-duration="1200" data-aos-delay="300"data-aos-offset="0"> 
+                            Portfolio 
+                        </button>
                     </Link>
 
                     <div className="icon-arrow" data-aos="fade-up" data-aos-easing="ease-in-out-cubic" data-aos-duration="1500" data-aos-offset="0"  data-aos-delay="800">

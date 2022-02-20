@@ -24,19 +24,22 @@
 
         } //footer-responsive
         
-        span {
-            color: rgb(223, 223, 223);
-            font-size: 14px;
-        }
-
-        .link {
-            color: rgb(255, 191, 28);
-            margin: 0px 5px;
-            text-decoration: none;
-            font-weight: 700;
-
-            &:hover {
-                color: rgb(39, 71, 255);
+        .footer__span {
+            span {
+                color: rgb(223, 223, 223);
+                font-size: 14px;
+                margin: 0;
+            }
+    
+            .link {
+                color: rgb(255, 191, 28);
+                margin: 0px 5px;
+                text-decoration: none;
+                font-weight: 700;
+    
+                &:hover {
+                    color: rgb(39, 71, 255);
+                }
             }
         }
         
@@ -91,11 +94,14 @@
                 } //footer-responsive
             } //text
 
-            span {
-                margin: 20px 0px;
-                display: flex;
-                justify-content: center;
-            }
+            .footer__span {
+                padding: 10px 0px 20px 0px;
+                
+                span {
+                    display: flex;
+                    justify-content: center;
+                }
+            } //footer__span
 
         } //container
     }

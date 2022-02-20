@@ -2,8 +2,6 @@
     padding-top: 30px;
     padding-bottom: 50px;
     position: relative;
-
-    // background: grey;
     overflow: hidden;
 
     display: flex;
@@ -29,8 +27,6 @@
             margin: 0;
             font-size: 150px;
             color: rgb(235, 235, 235);
-            // position: absolute;
-            // top: 30px;
         }
 
         .about__text {
@@ -58,6 +54,7 @@
 
                 border: none;
                 border-radius: 12px;
+                font-size: 14px;
 
                 display: flex;
                 align-items: center;
@@ -70,6 +67,7 @@
                 }
 
                 .arrow__icon {
+                    justify-content: center;
                     transition: all 0.3s ease;
 
                     i {
@@ -126,14 +124,14 @@
             width: 30px;
             height: 30px;
             left: -200px;
-            top: 140px;
+            top: 180px;
             background: #96a5e4;
         } //shape-2
 
         .shape-3 {
             width: 60px;
             height: 60px;
-            left: -20px;
+            left: -50px;
             top: 380px;
             background: #637ae8;
         } //shape-3
@@ -150,7 +148,7 @@
             width: 25px;
             height: 25px;
             left: 800px;
-            top: 280px;
+            top: 350px;
             background: #273464;
         } //shape-5
         
@@ -174,8 +172,9 @@
             }
 
             .about__text {
+                width: 100%;
+
                 .about__detail {
-                    width: 450px;
                     text-align: justify;
                     font-size: 14px
                 }
@@ -201,7 +200,7 @@
             // }
 
             .shape-4 {
-                top: 200px;
+                top: 280px;
             }
 
             .shape-3, .shape-5 {
@@ -215,6 +214,7 @@
 @media screen and (max-width: 500px) { 
     .About {
         padding-bottom: 50px;
+
         .container {
             .h1__intro {
                 font-size: 50px;
@@ -222,13 +222,13 @@
 
             .about__text {
                 margin-top: 10px;
+
                 .about__header {
                     font-size: 30px;
                 }
 
                 .about__detail {
                     margin-top: 0;
-                    width: 300px;
                     font-size: 14px;
                 }
             } //about__text
@@ -258,8 +258,8 @@
             .shape-4 {
                 width: 40px;
                 height: 40px;
-                left: 80px;
-                top: 350px;
+                left: 65px;
+                top: 315px;
             }
 
             .shape-5 {

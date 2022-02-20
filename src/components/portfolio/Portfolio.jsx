@@ -22,10 +22,6 @@ function Portfolio() {
         }
     }, [selected]);
 
-    useEffect (() => {
-        
-    })
-
     return (
         <div className="Portfolio-app">
                 
