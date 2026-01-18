@@ -28,7 +28,7 @@ function About() {
                 {/* text-details */}    
 
                 {/* btn */}
-                    <a href="https://drive.google.com/file/d/1YAyY5MPiJZY8nLZkGM1V9keL_WFfLv2j/view?usp=sharing" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/Thanakornkthphu/resume_frontend/blob/main/Thanakorn_Frontend_resume_2026pdf.pdf" target="_blank" rel="noreferrer">
                         <button className="btn__resume" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-back" data-aos-offset="0">
                             <span className="btn__resume__span" > 
                                 Resume
