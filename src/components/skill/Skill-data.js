@@ -12,6 +12,7 @@ import typescript from './../../assets/ts.png'
 import mobx from './../../assets/mobx.png'
 import jotai from './../../assets/jotai.png'
 import mui from './../../assets/mui.png'
+import styledComponent from './../../assets/styled-component.png'
 
 export const skills = [
     {   id: 1,
@@ -82,5 +83,10 @@ export const skills = [
         id: 14,
         img: responsive,
         title: "Responsive"
+    },
+    {
+        id: 15,
+        img: styledComponent,
+        title: "Styled Component"
     }
 ]
