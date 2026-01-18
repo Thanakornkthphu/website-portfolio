@@ -20,10 +20,10 @@ function About() {
                 <div className="about__text" data-aos="fade-right"  data-aos-duration="1200">
                     <h1 className="about__header" >Hi, I'm Thanakorn</h1>
                     <p className="about__detail" >
-                        I'm 24 years old I'm currently working as an administrator at Deves Insurance
-                        and I'm interested Front-end developer because before I studied UX/UI
-                        and during that time I also studied Front-end therefore, but I like Front-end
-                        more than and it feel like have developed products by myself.
+                    Hello, my nickname is Kay. I’m a Frontend Developer with 3 years of experience building scalable, 
+                    user-focused web applications using React and Javascript and Typescript. 
+                    Experienced in translating UI/UX designs into clean, maintainable code, identifying and fixing complex bugs, 
+                    and collaborating with cross-functional teams.
                     </p>
                 {/* text-details */}    
 
