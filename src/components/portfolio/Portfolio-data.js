@@ -3,16 +3,19 @@ import imgGrid2 from './../../assets/img-grid2.png'
 import imgGrid3 from './../../assets/img-grid3.png'
 import imgGrid4 from './../../assets/img-grid4.png'
 import imgGrid5 from './../../assets/img-grid5.png'
-import imgGrid6 from './../../assets/img-grid7.png'
+import mlbsWebsite from './../../assets/mlbs-port.png'
+import netflixClone from './../../assets/netflix-port.png'
 
 export const listMenus = [
     {
-        id: "UI",
-        title: "Design UI"
+        id: "1",
+        title: "Web App",
+        value: 'web',
     },
     {
-        id: "Web",
-        title: "Web App"
+        id: "2",
+        title: "Design UI",
+        value: 'ui',
     },
 ]
 
@@ -40,20 +43,32 @@ export const userInterface = [
 export const webApp = [
     {
         id: 1,
+        img: netflixClone,
+        title: "Netflix Clone",
+        link: "https://netflix-clone-project-371ab.web.app/"
+    },
+    {
+        id: 1,
+        img: mlbsWebsite,
+        title: "MLBS Website",
+        link: "https://mlbs.tech/"
+    },
+    {
+        id: 3,
         img: imgGrid4,
         title: "Covid-19 Dashborad",
         link: "https://react-covid-c98e9.firebaseapp.com/"
     },
     {
-        id: 2,
+        id: 4,
         img:  imgGrid5,
         title: "Seach Crypto App",
         link: "https://search-crypto.firebaseapp.com/"
     },
-    {
-        id: 3,
-        img:  imgGrid6,
-        title: "Redux Movies Details App",
-        link: "https://react-redux-movies.web.app/"
-    },
+    // {
+    //     id: 3,
+    //     img:  imgGrid6,
+    //     title: "Redux Movies Details App",
+    //     link: "https://react-redux-movies.web.app/"
+    // },
 ];

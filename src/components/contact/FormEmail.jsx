@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import { Formik, Form } from 'formik'
 import emailjs from 'emailjs-com';
 import * as Yup from 'yup';
@@ -10,24 +10,23 @@ import './FormEmail.scss'
 function FormEmail() {
 
     const [successfully, setSuccessfully] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const formRef = useRef();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    const sendEmail = (values, { resetForm }) => {
+        setIsSubmitting(true);
 
-        emailjs.sendForm('service_szdqb9q', 'template_n2ko08g', e.target, 'user_MOx8BDzmoqE4taPh674Bf')
+        emailjs.sendForm('service_etzsraw', 'template_4yjtndq', formRef.current, 'hsnCaKckbffNbzkne')
         .then((result) => {
             console.log(result.text);
+            setSuccessfully(true);
         }, (error) => {
             console.log(error.text);
+        })
+        .finally(() => {
+            setIsSubmitting(false);
         });
-        e.target.reset()
-        setSuccessfully(true);
     } 
-    // Email.js
-
-    setTimeout(() => {
-        setSuccessfully(false);
-    }, 5000);
 
     const validate = Yup.object({
         fullname: Yup.string()
@@ -39,7 +38,7 @@ function FormEmail() {
             .required('Email is required'),
         message: Yup.string()
             .min(10, 'Must be more than 10 characters')
-            .max(40, 'Must be 40 characters or less')
+            .max(500, 'Must be 500 characters or less')
             .required('Say somethings : D')
     })
 
@@ -53,17 +52,24 @@ function FormEmail() {
                         message: ''
                     }}
                     validationSchema={validate}
+                    onSubmit={sendEmail}
                 >
-                    {Formik => (
+                    {({ isValid, dirty }) => (
                         <div>
                             <h2>Say Hello !</h2>
-                            <Form onSubmit={sendEmail}>
+                            <Form ref={formRef}>
                                 <TextField label="full name" name="fullname" type="text" placeholder="full name" />
                                 <TextField label="email" name="email" type="email" placeholder="example@gmail.com"/>
                                 <TextArea label="message" name="message" type="text" placeholder="message" />
                                 <br />
 
-                                <button className="btn" type="submit"> SUBMIT </button>
+                                <button 
+                                    className="btn" 
+                                    type="submit" 
+                                    disabled={isSubmitting || !(isValid && dirty)}
+                                >
+                                    {isSubmitting ? 'SENDING...' : 'SUBMIT'}
+                                </button>
 
                                 <div className="text-successfully">
                                     {successfully ? <span>Your message has been successfully sent.</span> : null} 

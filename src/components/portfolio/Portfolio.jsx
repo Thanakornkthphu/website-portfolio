@@ -5,16 +5,16 @@ import { listMenus, userInterface, webApp } from './Portfolio-data.js';
 
 function Portfolio() {
 
-    const [selected, setSelected] = useState("UI");
+    const [selected, setSelected] = useState("web");
     const [dataGridSelected, setDataGridSelected] = useState([]);
 
     useEffect(() => {
         
         switch (selected) {
-            case "UI":
+            case "ui":
                 setDataGridSelected(userInterface)
                 break;
-            case "Web":
+            case "web":
                 setDataGridSelected(webApp)
                 break;
             default:
@@ -43,9 +43,9 @@ function Portfolio() {
                         {listMenus.map(list => {
                             return (
                                 <li 
-                                    className={selected === list.id ? "Portfolio-listActive active" : "Portfolio-listInactive"} 
+                                    className={selected === list.value ? "Portfolio-listActive active" : "Portfolio-listInactive"} 
                                     key={list.id} 
-                                    onClick={() => setSelected(list.id)}
+                                    onClick={() => setSelected(list.value)}
                                 >
                                     { list.title }
                                 </li>
